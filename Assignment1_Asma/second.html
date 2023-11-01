@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>AsmabanuSaiyed</title>
+    <link rel="stylesheet" href="saiyedas.css">
+    <script>
+        function loadData() {
+            let price = 25;
+            const data = JSON.parse(localStorage.getItem('data'));
+            if (data) {
+                document.querySelector('#firstname').innerText = data.firstname;
+                document.querySelector('#lastname').innerText = data.lastname;
+                document.querySelector('#email').innerText = data.email;
+                document.querySelector('#movie').innerText = data.selctedMovie;
+                document.querySelector('#gender').innerText = data.gender;
+                document.querySelector('#age').innerText = data.age;
+                document.querySelector('#quantity').innerText = data.quantity;
+                document.querySelector('#location').innerText = data.location;
+                document.querySelector('#timeshows').innerText = data.timeshows;
+                document.querySelector('#Total').innerText = "$" + (parseInt(data.quantity) * price);
+            }
+        }
+    </script>
+</head>
+
+<body onload="loadData()">
+    <header>
+        <div>
+            <h1>Booking Details</h1>
+        </div>
+    </header>
+    <div class="container">
+        <div class="summary">
+            <div class="summary-item">
+                <label for="">FirstName:</label>
+                <span id="firstname"></span>
+                <label for="">LastName:</label>
+                <span id="lastname"></span>
+            </div>
+            <div class="summary-item">
+                <label for="">Email:</label>
+                <span id="email"></span>
+            </div>
+            <div class="summary-item">
+                <label for="">Movie:</label>
+                <span id="movie"></span>
+            </div>
+            <div class="summary-item">
+                <label for="">Gender:</label>
+                <span id="gender"></span>
+            </div>
+            <div class="summary-item">
+                <label for="">Age:</label>
+                <span id="age"></span>
+            </div>
+            <div class="summary-item">
+                <label for="">Quantity:</label>
+                <span id="quantity"></span>
+            </div>
+            <div class="summary-item">
+                <label for="">Total price:</label>
+                <span id="Total"></span>
+            </div>
+            <div class="summary-item">
+                <label for="">Location:</label>
+                <span id="location"></span>
+            </div>
+            <div class="summary-item">
+                <label for="">TimeShows:</label>
+                <span id="timeshows"></span>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <h3>Copyright By Asma Saiyed/ 991574289/ Canada</h3>
+            <img src="./Image/OIP.jpg" alt="" height="30px">
+        </div>
+    </div>
+</body>
+
+</html>

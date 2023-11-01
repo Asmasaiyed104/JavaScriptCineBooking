@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif; /* Changing the font family to Poppins, which is modern and clean */
+    text-rendering: optimizeLegibility;
+}
+
+body {
+    background-color: #f4f6f8;
+    line-height: 1.6;
+}
+
+header {
+    background-color: #2C3E50;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 14px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    color: #ECF0F1;
+    font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-size: 24px;
+}
+
+.container {
+    max-width: 95%;
+    margin: 40px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+}
+
+.grid-item {
+    background-color: #AAB7B8;
+    padding: 20px;
+    font-size: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s;
+}
+
+.grid-item:hover {
+    transform: translateY(-10px); /* Adds a subtle lift effect on hover */
+}
+
+.grid-item button {
+    margin-top: 20px;
+    width: 60%;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #2980B9;
+    color: white;
+    cursor: pointer;
+    font-weight: 600;
+    transition: background-color 0.3s;
+}
+
+.grid-item button:hover {
+    background-color: #3498DB;
+}
+
+.summary {
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.summary-item {
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer {
+    background-color: #2C3E50;
+    padding: 20px 0;
+    text-align: center;
+    color: #ECF0F1;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+.footer img {
+    width: 100px; /* Adjust this to the preferred width of your image */
+    display: block;
+    margin: 20px auto;
+}
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #ECF0F1;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #3498DB;
+}

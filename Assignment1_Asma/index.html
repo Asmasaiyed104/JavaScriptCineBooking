@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>AsmabanuSaiyed</title>
+    <link rel="stylesheet" href="saiyedas.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <header>
+        
+            <div class="container">
+                <nav>
+                    <h1>Welcome to Amsa's Cineplex</h1>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+        
+  
+
+    <main class="container">
+        <form action="#" method="post">
+            <div class="grid-container">
+                <div class="grid-item">
+                    <label for="firstname">FirstName</label>
+                    <input id="firstname" type="text" value="Asmabanu" />
+                    <label for="lastname">LastName</label>
+                    <input id="lastname" type="text" value="Saiyed" />
+                    <br><br>
+                    <div id="moviesdiv">
+                        <label for="movies">Select Movie</label>
+                        <select id="movies" onchange="onMovieChange()">
+                            <option value="Avatar">Avatar</option>
+                            <!-- ... other options ... -->
+                        </select>
+                        <label>Gender:</label>
+                        <input type="radio" id="male" name="gender" value="Male">
+                        <label for="male">Male</label>
+                        <input type="radio" id="female" name="gender" value="Female">
+                        <label for="female">Female</label>
+                        <br><br>
+                        <label for="age">Age:</label>
+                        <input type="text" id="age" name="age" placeholder="Enter your age">
+                        <br><br>
+                        <label>Price:30</label>
+                        <button id="save" type="button" onclick="saveData()">Save Data</button>
+                    </div>
+                </div>
+                <div class="grid-item">
+                    <label for="email">Email</label>
+                    <input id="email" type="text" value="asmasaiyed104@gmail.com" placeholder="example@example.com" />
+                    <br>
+                    <div id="quantity" style="margin-top: 10px;">
+                        <label for="quantityofitems">How many to book :</label>
+                        <select id="quantityofitems" onchange="">
+                            <option value="1">1</option>
+                            <!-- ... other options ... -->
+                        </select>
+                        <p id="totalPrice">Total Price: $0</p>
+                        <select id="quantityofitems" onchange="calculateTotalPrice()">
+
+
+                    </div>
+                    <br>
+                    <label for="location">Location</label>
+                    <div id="Location" style="margin-top:10px;">
+                        <input type="radio" id="silverCity" name="location" value="SilverCity Brampton">
+                        <label for="silverCity">SilverCity Brampton</label>
+                        <input type="radio" id="cineplexMilton" name="location" value="Cineplex Cinemas Milton">
+                        <label for="cineplexMilton">Cineplex Cinemas Milton</label>
+                        <!-- ... other radio buttons ... -->
+                    </div>
+                    <div id="Movieshows" style="margin-top:10px;">
+                        <label for="timeshows">Time</label>
+                        <input type="time" id="timeshows" name="timeshows">
+                    </div>
+                    <button id="nextpage" type="button" onclick="gotoNext()">Go To Next Page</button>
+                </div>
+            </div>
+        </form>
+    </main>
+    <footer>
+        <div class="container">
+            <h3>AsmaSaiyed-991578249</h3>
+            <img src="Image/face.JPG" alt="Asma Saiyed's Picture" height="100px">
+        </div>
+    </footer>
+    <script src="saiyedas.js"></script>
+</body>
+
+</html>
